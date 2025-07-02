@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+ </head>
+
+
+<body>
+
+  <!-- Ini adalah Bagian Navigasi pada Website (NAVIGATION)-->
+
+  <header>
+    <img src="img/moriohCho.png" alt="morioh" class="logo">
+    <nav class="navigation">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="index2.html">Profile</a>
+      <a href="#">Contact</a>
+      <button class="btnLogin-popup">Login</button>
+    </nav>
+  </header>
+
+  <!-- Bagian beranda (HOME) -->
+
+  <section class="home">
+    <section class="home-content">
+
+      <div class="container-video">
+        <video controls>
+          <source src="MORIOH.mp4" type="">
+        </video>
+      </div>
+
+      <h1>Morioh University</h1>
+      <h3>(杜王町, Moriō-chō)</h3>
+
+      <p>Morioh University is a fictional higher education institution located in the peaceful coastal town of Morioh,
+        known for
+        its inspiring atmosphere and strong community spirit. As a center for knowledge and innovation, the university
+        is
+        committed to producing graduates who excel academically and embody integrity and social responsibility.
+      </p>
+      <br>
+      <p>With a team of dedicated educators and modern learning facilities, Morioh University offers a wide range of
+        distinguished programs in science, humanities, information technology, and creative arts. The campus provides a
+        serene
+        and inclusive environment that encourages students to grow, explore, and contribute meaningfully to society.
+
+        Guided by its motto, "Knowledge, Integrity, and Innovation", Morioh University strives to remain relevant,
+        forward-thinking, and responsive to the challenges of the modern world.
+      </p>
+
+
+
+      <!-- Bagian Catatan Kaki (FOOTER)  -->
+      <section class="footer">
+        <div class="footer-content">
+          <img src="img/moriohCho.png" alt="">
+          <p>Proudly Morioh. Proudly You. We Love, MORIOH-CHO! </p>
+
+          <div class="icons">
+            <a href="#" <i class='bx bxl-facebook-circle'></i></a>
+            <a href="#"><i class='bx bxl-youtube'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxs-badge-check'></i></a>
+          </div>
+        </div>
+
+        <div class="footer-content">
+          <h4>About</h4>
+          <li><a href="#">History</a></li>
+          <li><a href="#">Leadership</a></li>
+          <li><a href="#">Accrediation</a></li>
+        </div>
+
+        <div class="footer-content">
+          <h4>Academics</h4>
+          <li><a href="#">Program & Degrees</a></li>
+          <li><a href="#">Academic Calendar</a></li>
+          <li><a href="#">Admissions</a></li>
+          <li><a href="#">Library Services</a></li>
+        </div>
+
+        <div class="footer-content">
+          <h4>Connect</h4>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Visit Campus</a></li>
+          <li><a href="#">Accessibility</a></li>
+        </div>
+
+      </section>
+
+      <!-- BAGIAN KESELURUHAN FORM LOGIN -->
+      <div class="wrapper">
+        <span class="icon-close">
+          <ion-icon name="close"></ion-icon>
+        </span>
+
+
+        <!-- HALAMAN LOGIN -->
+        <div class="form-box login">
+          <h2>Login</h2>
+          <form action="#">
+
+            <div class="input-box">
+              <span class="icon">
+                <ion-icon name="mail">
+                </ion-icon>
+              </span>
+              <input type="mail" required>
+              <label>Email</label>
+            </div>
+
+            <div class="input-box">
+              <span class="icon">
+                <ion-icon name="lock-closed">
+                </ion-icon>
+              </span>
+              <input type="password" required>
+              <label>Password</label>
+            </div>
+
+            <div class="remember-forgot">
+              <label><input type="checkbox">
+                Remember me</label>
+              <a href="#">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="btn">Login
+            </button>
+
+            <div class="login-register">
+              <p>Don't have an account?<a href="#" class="register-link"> Register</a></p>
+            </div>
+
+
+          </form>
+        </div>
+
+        <!-- HALAMAN REGISTER -->
+        <div class="form-box register">
+          <h2>Registration</h2>
+          <form action="#">
+
+            <div class="input-box">
+              <span class="icon">
+                <ion-icon name="person">
+                </ion-icon>
+              </span>
+              <input type="text" required>
+              <label>Username</label>
+            </div>
+
+            <div class="input-box">
+              <span class="icon">
+                <ion-icon name="mail">
+                </ion-icon>
+              </span>
+              <input type="mail" required>
+              <label>Email</label>
+            </div>
+
+            <div class="input-box">
+              <span class="icon">
+                <ion-icon name="lock-closed">
+                </ion-icon>
+              </span>
+              <input type="password" required>
+              <label>Password</label>
+            </div>
+
+            <div class="remember-forgot">
+              <label><input type="checkbox">
+                I agree to the terms & conditions</label>
+            </div>
+
+            <button type="submit" class="btn">Register
+            </button>
+
+            <div class="login-register">
+              <p>Already have an account?<a href="#" class="login-link"> Login</a></p>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+      <script src="script.js"></script>
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</html>

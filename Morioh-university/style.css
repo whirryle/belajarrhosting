@@ -1,0 +1,417 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+* {
+  margin: 0;
+  /* border: 2px solid red; */
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "sans-serif";
+}
+
+body {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  background-image: linear-gradient(
+      90deg,
+      rgba(25, 70, 252, 0.7),
+      rgba(189, 189, 189, 0.7)
+    ),
+    url("https://img.freepik.com/free-photo/particle-lines-futuristic-gradient-background_53876-104053.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  /* border: 2px solid red; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+  background-image: linear-gradient(
+    rgba(188, 187, 187, 0.904),
+    rgba(27, 73, 255, 0.7)
+  );
+  /* background: #dad7f9; */
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  user-select: none;
+}
+
+.navigation a {
+  position: relative;
+  font-size: 1.1em;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 27px;
+}
+
+.navigation a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: 0.5s;
+}
+
+.navigation a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup {
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #fff;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 20px;
+  transition: 0.5s;
+}
+
+.navigation .btnLogin-popup:hover {
+  background-color: #fff;
+  color: #0091ff;
+  /* color: #162938; */
+}
+
+/* HOME */
+
+/* VIDEO ELEMENT */
+
+video {
+  /* border: 2px solid red; */
+  justify-content: center;
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container-video {
+  /* border: 2px solid red; */
+  margin: 0px auto;
+  margin-top: 25vh;
+  margin-bottom: 15vh;
+  display: flex;
+  position: relative;
+  z-index: 0;
+  box-shadow: 0 0 30px rgba(15, 15, 15, 0.5);
+  overflow: hidden;
+}
+
+.home {
+  /* border: 2px solid red; */
+  height: auto;
+  background-image: url("img/MoriohJJ8.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+  padding: 0 10%;
+  margin-bottom: 50vh;
+  display: flex;
+  justify-content: center;
+}
+
+.home-content {
+  max-width: 100rem;
+}
+
+.home-content h1 {
+  position: relative;
+  font-size: 76px;
+  color: rgb(38, 38, 38);
+  font-weight: 700;
+}
+
+.home-content h3 {
+  font-size: 42px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #cdc7c7;
+}
+
+.home-content p {
+  color: rgb(229, 232, 246);
+}
+
+/* FOOTER */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer {
+  padding: 80px 13%;
+  margin-top: 15%;
+  background: #121b25;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+  gap: 7.5rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+section .footer img {
+  width: 40px;
+}
+
+.footer-content h4 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.footer-content li {
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+
+.footer-content li a {
+  display: block;
+  color: #d6d6d6;
+  font-size: 12px;
+  font-weight: 400;
+  transition: all 0.4s ease;
+}
+
+.footer-content li a:hover {
+  transform: translateY(-3px) translate(5px);
+  color: #fff;
+}
+
+.footer-content p {
+  color: #d6d6d6;
+  font-size: 16px;
+  line-height: 30px;
+  margin: 20px 0;
+}
+
+.icons a {
+  display: inline-block;
+  font-size: 22px;
+  color: #d6d6d6;
+  margin-right: 17px;
+  transition: all 0.4s ease;
+}
+
+.icons a:hover {
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+/* FORM BOX LOGIN */
+
+.wrapper {
+  /* border: 2px solid red; */
+  top: 30%;
+  left: 38%;
+  position: fixed;
+  width: 400px;
+  height: 440px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(100px);
+  box-shadow: 0 0 30px rgba(48, 24, 24, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transform: scale(0);
+  transition: transform 0.5s ease, height 0.2s ease;
+  z-index: 999;
+}
+
+.wrapper.active-popup {
+  transform: scale(1);
+}
+
+.wrapper.active {
+  height: 520px;
+}
+
+.wrapper .form-box {
+  width: 100%;
+  padding: 40px;
+  z-index: 1000;
+}
+
+.wrapper .form-box.login {
+  transition: transform 0.18s ease;
+  transform: translateX(0);
+}
+
+.wrapper.active .form-box.login {
+  transition: none;
+  transform: translateX(-400px);
+}
+
+.wrapper .form-box.register {
+  position: absolute;
+  transition: none;
+  transform: translateX(400px);
+}
+
+.wrapper.active .form-box.register {
+  transition: transform 0.18s ease;
+  transform: translateX(0);
+}
+
+.wrapper .icon-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  background: #162938;
+  border: 2px solid #ffffff42;
+  font-size: 2em;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 20px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.form-box h2 {
+  font-size: 2em;
+  color: #ffffff;
+  /* color: #162938; */
+  text-align: center;
+  z-index: 1000;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid #162938;
+  margin: 30px 0;
+}
+
+.input-box label {
+  position: absolute;
+  top: 100%;
+  left: 5px;
+  transform: translateY(-50px);
+  font-size: 1em;
+  color: #ffffff;
+  font-weight: 500;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: 40px;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 8px;
+  font-size: 1.2em;
+  color: #ffffff;
+  line-height: 57px;
+}
+
+.remember-forgot {
+  font-size: 0.9em;
+  color: #ffffff;
+  font-weight: 500;
+  margin: -15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.remember-forgot label input {
+  accent-color: #ffffff;
+  margin-right: 3px;
+}
+
+.remember-forgot a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  width: 100%;
+  height: 45px;
+  background: #162938;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #fff;
+  font-weight: 500;
+}
+
+.login-register {
+  font-size: 0.9em;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 500;
+  margin: 25px 0 10px;
+}
+
+.login-register p a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-register p a:hover {
+  text-decoration: underline;
+}
+
+/* KEYFRAMES ANIMATION */
+/* @keyframes showRight {
+  100% {
+    width: 0;
+  }
+}; */
